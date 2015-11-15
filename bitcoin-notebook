@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+WD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . ./virtualenv/bin/activate
-jupyter notebook --notebook-dir=./notebooks $@
+PYTHONPATH="${WD}" jupyter notebook --notebook-dir=./notebooks $@
