@@ -14,7 +14,7 @@ Use
 	plt.plot(result["results"]["%bl"], label="%bl")
 	plt.show()
 
-![Example query result](./notesbooks/example-query.png)
+![Example query result](./notebooks/example-query.png)
 
 Install
 -------
