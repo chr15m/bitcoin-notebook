@@ -1,6 +1,6 @@
 all: bitcoin-iterate/bitcoin-iterate virtualenv/lib/python2.7/site-packages
 
-.PHONY: clean pdfexport depdendencies
+.PHONY: clean depdendencies dependencies-pdf
 
 bitcoin-iterate:
 	git submodule init
@@ -20,8 +20,8 @@ virtualenv/lib/python2.7/site-packages: requirements.txt virtualenv/bin/activate
 dependencies:
 	sudo apt-get install python-virtualenv libfreetype6-dev liblapack-dev gfortran libpng12-dev
 
-pdfexport:
-	sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended inkscape pandoc
+dependencies-pdf:
+	sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended pandoc
 	curl http://ctan.mackichan.com/macros/plain/contrib/misc/ulem.sty > ulem.sty
 
 clean:
