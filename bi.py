@@ -14,6 +14,9 @@ def bi(cmd):
     # run the external command to parse
     cmd = os.path.dirname(__file__) + "/bitcoin-iterate/bitcoin-iterate -q " + cmd
     stdout, stderr = Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True).communicate()
+    # catch bad bitcoin-iterate invocation
+    if "Usage" in stdout:
+        raise Exception("Invalid bitcoin-iterate invocation.\n\n" + stdout)
     # parse the results into our datastructure with python friendly values
     for l in stdout.split("\n"):
         if l:
