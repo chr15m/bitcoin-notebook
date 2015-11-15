@@ -1,9 +1,9 @@
 > "Needs more computer science, less noise."
 > --Nick Szabo
 
-Bitcoin Notebook connects Rusty Russell's `bitcoin-iterate` to the Jupyter iPython Notebook to enable fast and easy queries against the blockchain history which can then be processed and graphed in a way that is reproduceable and literate.
+Bitcoin Notebook connects [Rusty Russell's `bitcoin-iterate`](https://github.com/rustyrussell/bitcoin-iterate/) to the Jupyter iPython Notebook to enable fast and easy processing and graphing of `bitcoin-iterate` queries against the blockchain history in a way that is reproduceable and literate.
 
-Check out the [example notebook](./notebooks/Bitcoin Notebook Hello World.ipynb) which contains a couple of demonstration queries, and a [PDF "paper" export](./notebooks/Bitcoin Notebook Hello World.pdf) of the same results.
+Check out the [example notebook](./notebooks/Bitcoin Notebook Hello World.ipynb) which contains demonstration queries, and a [PDF "paper" export](./notebooks/Bitcoin Notebook Hello World.pdf) of the same results.
 
 Use
 ---
@@ -24,7 +24,7 @@ Run `make` to generate the Python virtualenv environment and compile `bitcoin-it
 Run
 ---
 
-`./bitcoin-notebook` will launch the Jupyter server with the paths all configured correctly and automatically open a browser window pointing at the notebook list.
+`./bitcoin-notebook` will launch the Jupyter server with the paths all configured correctly and open a browser window pointing at the notebook list.
 
 Probably the most important thing to remember for people new to Jupyter is that pressing `shift-Enter` will re-run the code in the highlighted section.
 
