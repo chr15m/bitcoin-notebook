@@ -3,3 +3,4 @@
 virtualenv
 notebooks/.ipynb_checkpoints
 ulem.sty
+notebooks/my-notebooks
