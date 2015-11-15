@@ -20,7 +20,8 @@ def bi(cmd):
             vals = l.split(",")
             if vals:
                 for f in range(len(fields)):
-                    fields[f][1].append(types.get(fields[f][0], str)(vals[f]))
+                    # compute the python friendly values using the types lookup (defaults back to unicode)
+                    fields[f][1].append(types.get(fields[f][0], unicode)(vals[f]))
     return {
         "results": dict(fields),
         "stderr": stderr
