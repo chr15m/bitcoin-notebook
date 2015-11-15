@@ -1,0 +1,4 @@
+[submodule "bitcoin-iterate"]
+	path = bitcoin-iterate
+	url = https://github.com/rustyrussell/bitcoin-iterate.git
+	ignore = dirty
