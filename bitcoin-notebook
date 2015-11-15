@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
 . ./virtualenv/bin/activate
-jupyter notebook --notebook-dir=./notebooks $@ &
+jupyter notebook --notebook-dir=./notebooks $@
