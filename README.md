@@ -5,6 +5,17 @@ Bitcoin Notebook connects Rusty Russell's `bitcoin-iterate` to the Jupyter iPyth
 
 Check out the [example notebook](./notebooks/Bitcoin Notebook Hello World.ipynb) which contains a couple of demonstration queries, and a [PDF "paper" export](./notebooks/Bitcoin Notebook Hello World.pdf) of the same results.
 
+Use
+---
+
+	from bi import bi
+	result = bi("--block %bl --end=140000")
+	plt.figure(figsize=(20,8))
+	plt.plot(result["results"]["%bl"], label="%bl")
+	plt.show()
+
+![Example query result](./notesbooks/example-query.png)
+
 Install
 -------
 
