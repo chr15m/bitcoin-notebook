@@ -1,0 +1,9 @@
+ipython==4.0.0
+funcsigs==0.4
+functools32==3.2.3-2
+gfm==0.0.3
+jupyter==1.0.0
+jsonfield==1.0.2
+jsonschema==2.5.1
+markdown2==2.3.0
+matplotlib==1.4.3
