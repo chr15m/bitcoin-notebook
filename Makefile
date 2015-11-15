@@ -18,7 +18,7 @@ virtualenv/lib/python2.7/site-packages: requirements.txt virtualenv/bin/activate
 # PHONY tasks
 
 dependencies:
-	sudo apt-get install libfreetype6-dev liblapack-dev gfortran libpng12-dev
+	sudo apt-get install python-virtualenv libfreetype6-dev liblapack-dev gfortran libpng12-dev
 
 pdfexport:
 	sudo apt-get install texlive-latex-base texlive-latex-extra texlive-fonts-recommended inkscape pandoc
