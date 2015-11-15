@@ -1,12 +1,35 @@
 from subprocess import Popen, PIPE
 import os
 import re
+from datetime import datetime
 
 sep_re = re.compile("[\s=]")
 
 types = {
     "%bl": int,
+    "%bv": int,
+    "%bs": lambda x: datetime.fromtimestamp(float(x)),
+    "%bt": int,
+    "%bn": int,
+    "%bc": int,
     "%bN": int,
+
+    "%tv": int,
+    "%tN": int,
+    "%ti": int,
+    "%to": int,
+    "%tt": lambda x: datetime.fromtimestamp(float(x)) if int(x) > 5000000 else int(x),
+    "%tl": int,
+    "%tN": int,
+    "%tF": int,
+
+    "%ii": int,
+    "%il": int,
+    "%iN": int,
+
+    "%oa": int,
+    "%ol": int,
+    "%oN": int,
 }
 
 def bi(cmd):
